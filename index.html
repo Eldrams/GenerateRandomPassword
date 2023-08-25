@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate your password</h1>
+        <h2><span>Stay Secure</span></h2>
+        <button id="genPasswordBtn" onclick="genPassword()">Generate Password</button>
+            <div class="clipboard">
+                
+                <div class="clipboard1">
+                    <p id="displayPass1">Display Password:</p>
+                    <button onclick="copyToClip('displayPass1')">Copy to Clipboard</button>
+                </div>
+
+                <div class="clipboard1">
+                    <p id="altPassword">Display alternate Password:</p>
+                    <button onclick="copyToClip('altPassword')">Copy to Clipboard</button>
+                </div>
+            </div>
+    </div>
+    <script src="PasswordGenerator.js"></script>
+</body>
+</html>
